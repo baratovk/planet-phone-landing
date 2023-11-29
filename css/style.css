@@ -47,7 +47,9 @@ textarea::placeholder {
   text-align: center;
 }
 
-.default-btn a {
+.default-btn a,
+.default-btn button {
+  cursor: pointer;
   display: inline-block;
   color: #FFF;
   background-color: #25428E;
@@ -56,7 +58,8 @@ textarea::placeholder {
   transition: background-color 0.35s ease-in-out;
 }
 
-.default-btn a:hover {
+.default-btn a:hover,
+.default-btn button:hover {
   background-color: #1F3776;
 }
 
@@ -72,6 +75,27 @@ textarea::placeholder {
   width: 40px;
   border-bottom: 1px solid #FFF;
   margin: 15px auto;
+}
+
+.title-left h2 {
+  position: relative;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.title-left h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #E73D6B;
+  top: 50%;
+  left: calc(-100% - 25px);
+  transform: translateY(-50%);
+}
+
+.title-left .title-desc {
+  color: #969696;
 }
 
 /* Header Start */
@@ -269,3 +293,64 @@ textarea::placeholder {
 }
 
 /* Pricing End */
+
+/* Feedback Start */
+.s-feedback {
+  padding: 90px 0;
+}
+
+.feedback-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.s-feedback .title-desc {
+  max-width: 470px;
+}
+
+.feedback-left {
+  max-width: 580px;
+  margin-right: 50px;
+}
+
+.feedback-right {
+  width: 100%;
+  max-width: 450px;
+}
+
+.feedback-right form {
+  position: relative;
+  background-color: #FFF;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 -1px 8px 4px rgba(88, 83, 83, 0.12);
+  padding: 60px 45px;
+}
+
+.feedback-right form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #25428E;
+}
+
+.feedback-right input,
+.feedback-right textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+}
+
+.feedback-right button {
+  font-size: 16px;
+  padding: 12px 70px;
+}
+
+/* Feedback End */
