@@ -132,3 +132,44 @@ textarea::placeholder {
 }
 
 /* Banner End */
+
+/* Features Start */
+.s-features {
+  padding: 85px 0;
+}
+
+.features-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.features-item {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.features-item:nth-child(odd) {
+  border-right: 1px solid #D9D9D9;
+}
+
+.features-item:nth-child(-n+2) {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.features-icon {
+  margin-bottom: 14px;
+}
+
+.features-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.features-desc {
+  color: #B4B3B3;
+  max-width: 278px;
+  margin: 0 auto;
+}
+
+/* Features End */
