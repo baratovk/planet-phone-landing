@@ -8,163 +8,145 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <title>Planet phone</title>
+  <title>Planet Phone</title>
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="header">
     <div class="container">
-      <div class="header-row">
+      <div class="header__row">
         <div class="logo">
-          <a href="#">
-            <img src="img/logo.svg" alt="Planet phone logo">
+          <a class="logo__lnk" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="Planet Phone logo">
           </a>
         </div>
         <nav class="menu">
-          <div class="burger-elements">
-            <span>Menu</span>
-            <span class="burger-close">
+          <div class="menu__burger">
+            <span class="menu__title">Menu</span>
+            <span class="menu__burger-close">
               <img src="img/close.svg" alt="Burger menu close icon">
             </span>
           </div>
-          <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__lnk lnk" href="#features-anchor">Features</a></li>
+            <li class="menu__item">
+              <a class="menu__lnk lnk" href="#pricing-anchor">Pricing</a></li>
+            <li class="menu__item">
+              <a class="menu__lnk lnk" href="#feedback-anchor">Contacts</a></li>
           </ul>
         </nav>
-        <div class="burger">
+        <div class="menu__burger-open">
           <img src="img/burger.svg" alt="Burger menu icon">
         </div>
       </div>
     </div>
   </header>
 
-  <div class="s-banner">
+  <section class="banner">
     <div class="container">
-      <div class="banner-wrapper">
-        <h1 class="banner-title">Appliance repair apple</h1>
-        <div class="banner-desc">We repair Apple appliances. For 10 years of work, we have gained a lot of experience. Guaranteed speed and quality.</div>
-        <div class="banner-btn default-btn">
-          <a href="#">See prices</a>
+      <div class="banner__wrapper">
+        <h1 class="banner__title main-title title title--light-weight title--light-color">Apple repair center</h1>
+        <p class="banner__desc desc desc--light-color">The only authorized service center for all Apple devices in the region. They trust us.</p>
+        <a class="banner__btn btn btn--default" href="#pricing-anchor">See tariffs</a>
+        <img class="banner__img img" src="img/iphone.png" alt="iPhone mockup">
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features-anchor">
+    <div class="container">
+      <div class="features__wrapper">
+        <div class="features__item item--border-bottom item--border-right">
+          <img class="features__icon" src="img/features-1.svg" alt="Feature icon">
+          <h3 class="features__title item-title title title--regular-weight">Fast result</h3>
+          <p class="features__desc desc">Thanks to properly structured business processes and customer focus, we return devices in a short time.</p>
         </div>
-        <div class="banner-img">
-          <img src="img/iphone.png" alt="iPhone mockup">
+        <div class="features__item item--border-bottom">
+          <img class="features__icon" src="img/features-2.svg" alt="Feature icon">
+          <h3 class="features__title item-title title title--regular-weight">Flexible tariffs</h3>
+          <p class="features__desc desc">For the convenience and flexibility of our clients, we have made several annual service plans.</p>
+        </div>
+        <div class="features__item item--border-right">
+          <img class="features__icon" src="img/features-3.svg" alt="Feature icon">
+          <h3 class="features__title item-title title title--regular-weight">Professional team</h3>
+          <p class="features__desc desc">Our team employs only highly qualified specialists who regularly undergo training from the manufacturer.</p>
+        </div>
+        <div class="features__item">
+          <img class="features__icon" src="img/features-4.svg" alt="Feature icon">
+          <h3 class="features__title item-title title title--regular-weight">Quality assurance</h3>
+          <p class="features__desc desc">Thanks to genuine components and official technical documentation, we guarantee reliability and quality.</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="s-features">
+  <section class="pricing" id="pricing-anchor">
     <div class="container">
-      <div class="features-wrapper">
-        <div class="features-item">
-          <div class="features-icon">
-            <img src="img/features-1.svg" alt="Feature icon">
-          </div>
-          <div class="features-title">Quick result</div>
-          <div class="features-desc">Our team has been working for more then 10 years and has a lot of experience. When ordering from us, you can be sure.</div>
-        </div>
-        <div class="features-item">
-          <div class="features-icon">
-            <img src="img/features-2.svg" alt="Feature icon">
-          </div>
-          <div class="features-title">Affordable price</div>
-          <div class="features-desc">Since many customers order from us, we decided to make prices affordable for everyone.</div>
-        </div>
-        <div class="features-item"><div class="features-icon">
-          <img src="img/features-3.svg" alt="Feature icon">
-        </div>
-        <div class="features-title">Professional team</div>
-        <div class="features-desc">Since many customers order from us, we decided to make prices affordable for everyone.</div></div>
-        <div class="features-item"><div class="features-icon">
-          <img src="img/features-4.svg" alt="Feature icon">
-        </div>
-        <div class="features-title">Quality assurance</div>
-        <div class="features-desc">We guarantee a refund if the quality of service does not suit you. Clients are the most important for us.</div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="s-pricing">
-    <div class="container">
-      <h2 class="title-center">Pricing</h2>
-      <div class="pricing-wrapper">
-        <div class="pricing-item">
-          <div class="pricing-tariff">Base</div>
-          <div class="pricing-price">50 USD</div>
-          <ul class="pricing-list">
-            <li>See stress-free marketing pages</li>
-            <li>Praising pain was born</li>
-            <li>Because those who</li>
+      <h2 class="pricing__title second-title title title--light-weight title--light-color">Our pricing</h2>
+      <div class="pricing__wrapper">
+        <div class="pricing__item">
+          <h3 class="pricing__tariff">Base</h3>
+          <div class="pricing__price">80 USD</div>
+          <ul class="pricing__list">
+            <li class="pricing__list-item">Only one device</li>
+            <li class="pricing__list-item">iPhone or iPad</li>
+            <li class="pricing__list-item">No more than 3 cases a year</li>
           </ul>
-          <div class="pricing-btn">
-            <a href="#">Choose a tariff</a>
-          </div>
+          <a class="pricing__btn btn btn--bordered" href="#">Choose a tariff</a>
         </div>
-        <div class="pricing-item">
-          <div class="pricing-tariff">Professional</div>
-          <div class="pricing-price">150 USD</div>
-          <ul class="pricing-list">
-            <li>Because those who</li>
-            <li>Simple, stress-free marketing pages</li>
-            <li>Because those who</li>
-            <li>With righteous indignation and</li>
-            <li>With righteous indignation and</li>
-            <li>Cannot foresee the pain and trouble</li>
+        <div class="pricing__item pricing__item--action">
+          <h3 class="pricing__tariff">Charged</h3>
+          <div class="pricing__price">190 USD</div>
+          <ul class="pricing__list">
+            <li class="pricing__list-item">Up to three devices</li>
+            <li class="pricing__list-item">iPhone, iPad and Macbook</li>
+            <li class="pricing__list-item">Up to 5 cases per year</li>
+            <li class="pricing__list-item">Hot swap in exceptional cases</li>
+            <li class="pricing__list-item">Free fast delivery</li>
+            <li class="pricing__list-item">Premium support</li>
           </ul>
-          <div class="pricing-btn">
-            <a href="#">Choose a tariff</a>
-          </div>
+          <a class="pricing__btn btn btn--bordered-inversion" href="#">Choose a tariff</a>
         </div>
-        <div class="pricing-item">
-          <div class="pricing-tariff">Ultimate</div>
-          <div class="pricing-price">280 USD</div>
-          <ul class="pricing-list">
-            <li>Every pleasure is to be welcomed</li>
-            <li>Will frequently accur that pleasure</li>
-            <li>Will frequently accur that pleasure</li>
+        <div class="pricing__item">
+          <h3 class="pricing__tariff">Ultimate</h3>
+          <div class="pricing__price">260 USD</div>
+          <ul class="pricing__list">
+            <li class="pricing__list-item">Up to five devices</li>
+            <li class="pricing__list-item">Any Apple devices</li>
+            <li class="pricing__list-item">Unlimited cases per year</li>
+            <li class="pricing__list-item">Premium support</li>
           </ul>
-          <div class="pricing-btn">
-            <a href="#">Choose a tariff</a>
-          </div>
+          <a class="pricing__btn btn btn--bordered" href="#">Choose a tariff</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="s-feedback">
+  <section class="feedback" id="feedback-anchor">
     <div class="container">
-      <div class="feedback-row">
-        <div class="feedback-left">
-          <div class="title-left">
-            <h2>Feedback</h2>
-            <div class="title-desc">If you have any questions or would like to order our services from us, please fill out from on the right. Our managers work around the clock and will call back you during the day.</div>
-          </div>
-          <div class="feedback-img">
-            <img src="img/macbook.png" alt="Macbook mockup">
-          </div>
+      <div class="feedback__wrapper">
+        <div class="feedback__left">
+          <h2 class="feedback__title second-title title title--light-weight">Feedback</h2>
+          <p class="feedback__desc desc">If you need advice or have questions or suggestions, please fill out this feedback form. Our managers work every day and will call you back as soon as possible. We always welcome your requests.</p>
+          <img class="feedback__img img" src="img/macbook.png" alt="Macbook mockup">
         </div>
-        <div class="feedback-right">
-          <form action="#">
-            <input type="text" placeholder="Your name*" required>
-            <input type="text" placeholder="Your phone*" required>
-            <input type="email" placeholder="Your email">
-            <textarea cols="30" rows="6" placeholder="Comment"></textarea>
-            <div class="default-btn">
-              <button href="#">Send</button>
-            </div>
+        <div class="feedback__right">
+          <form class="feedback__form" action="#">
+            <input class="feedback__form-item form-input" type="text" placeholder="Your name*" required>
+            <input class="feedback__form-item form-input" type="text" placeholder="Your phone*" required>
+            <input class="feedback__form-item form-input" type="email" placeholder="Your email">
+            <textarea class="feedback__form-item form-input" cols="30" rows="6" placeholder="Your comment"></textarea>
+            <button class="feedback__form-btn btn btn--default" href="#">Send</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <div class="text-copyright">
-        Copyright © 2023 by <strong>Planet phone</strong>. All rights reserved.
-      </div>
+      <p class="footer__copyright">Copyright © 2023 by <strong>Planet Phone</strong>. All rights reserved.</p>
     </div>
   </footer>
 
